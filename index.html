@@ -1,0 +1,986 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <title>Vellorist Studio — Beranda</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-background font-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(35,51,41,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1360px] mx-auto px-gutter flex items-center justify-between"
+      >
+        <div class="flex items-center gap-space-sm">
+          <img
+            alt="Vellorist Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1WPaFYtWAHURqjgn2msfA2mNFcrvAtFEhROA93lSEKMshj1hp--OgjpRn6XPvwIaU9M4xhnl8YlMvl7SIVqhHeZ5TDjcMeCkmWuOjpsYXPFC6RbdsGs_RzykTKXjSZixFthWUQMLYKCqxGjQTdlPDmWE1hRpTDXipSRnGhZ8pP8cNA_2I491YZav0qcunh07PG3jBDMgO5YDennjhSKTkFwrCE8IF7peBVQJV-Qlk3F_qOsODDSeHId0g"
+          /><a
+            class="font-headline-sm text-headline-sm tracking-tight text-primary font-normal"
+            data-path="beranda"
+            href="index.html"
+            >Vellorist</a
+          >
+        </div>
+        <nav
+          class="hidden md:flex items-center gap-space-lg"
+          data-active-classes="text-primary font-semibold border-b border-primary"
+        >
+          <a
+            aria-current="page"
+            class="transition-colors py-1 text-primary font-semibold border-b border-primary"
+            data-path="beranda"
+            href="index.html"
+            >Beranda</a
+          ><a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="buat-buket"
+            href="builder-bunga.html"
+            >Buat Buket</a
+          ><a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="rekomendasi"
+            href="index.html#koleksi"
+            >Rekomendasi</a
+          ><a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="lokasi"
+            href="index.html#lokasi"
+            >Lokasi</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            aria-label="Keranjang Belanja"
+            class="relative flex items-center justify-center p-space-xs text-primary hover:text-secondary transition-colors"
+            data-path="keranjang"
+            href="pratinjau.html"
+            ><span class="material-symbols-outlined text-[24px]"
+              >shopping_bag</span
+            ><span
+              class="absolute -top-1 -right-1.5 flex items-center justify-center min-w-[18px] h-[18px] px-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] leading-none"
+              >2</span
+            ></a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background min-h-screen">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION: Editorial Split Layout with Botanical Harmony -->
+        <section
+          class="relative w-full overflow-hidden bg-surface-container-low/60 py-space-xl lg:py-24"
+        >
+          <div
+            class="max-w-[1360px] mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+          >
+            <!-- Left Narrative Column (5 Cols) -->
+            <div class="lg:col-span-5 flex flex-col z-10">
+              <div class="inline-flex items-center gap-2 mb-space-md">
+                <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                <span
+                  class="font-label-sm text-label-sm tracking-widest uppercase text-secondary font-semibold"
+                  >Atelier Floral &amp; Custom Floristry</span
+                >
+              </div>
+              <h1
+                class="font-display-lg text-display-lg text-primary tracking-tight mb-space-md leading-[1.12]"
+              >
+                Rangkai Buket
+                <span class="italic font-normal text-secondary font-headline-lg"
+                  >Impianmu</span
+                >
+                Sendiri
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-space-lg font-light leading-relaxed"
+              >
+                Pilih bunga, kertas, dan tulis ucapanmu. Nikmati pengalaman
+                kurasi botani yang intim dengan pratinjau visual sebelum
+                memesan.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm mb-space-xl"
+              >
+                <a
+                  class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all group"
+                  data-path="buat-buket"
+                  href="builder-bunga.html"
+                >
+                  <span>Buat Buket Sendiri</span>
+                  <span
+                    class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1"
+                    >arrow_forward</span
+                  >
+                </a>
+                <a
+                  class="inline-flex items-center justify-center px-6 py-4 rounded-full bg-surface text-primary font-label-lg text-label-lg hover:bg-surface-container transition-colors shadow-sm"
+                  href="#koleksi"
+                >
+                  Lihat Rekomendasi
+                </a>
+              </div>
+              <!-- Trust Badges -->
+              <div class="pt-space-md grid grid-cols-3 gap-space-sm">
+                <div class="flex flex-col gap-1">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[22px]"
+                    >local_florist</span
+                  >
+                  <span
+                    class="font-label-md text-label-md text-primary font-semibold"
+                    >Bunga Segar Harian</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-tight"
+                    >Kurasi panen subuh</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[22px]"
+                    >cloud_download</span
+                  >
+                  <span
+                    class="font-label-md text-label-md text-primary font-semibold"
+                    >Pengiriman Cepat</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-tight"
+                    >Jabodetabek &amp; Depok</span
+                  >
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span
+                    class="material-symbols-outlined text-secondary text-[22px]"
+                    >auto_awesome</span
+                  >
+                  <span
+                    class="font-label-md text-label-md text-primary font-semibold"
+                    >Preview Real-Time</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-tight"
+                    >Visualisasi presisi</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Right Visual Column (7 Cols): Botanical Workshop Composition -->
+            <div class="lg:col-span-7 relative">
+              <div
+                class="relative w-full rounded-2xl overflow-hidden shadow-xl bg-surface-container aspect-[16/11]"
+              >
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  data-alt="An authentic, high-end botanical floristry atelier table flooded in natural sunlight through tall loft windows. Center stage features a stunning handmade bouquet of soft blush ranunculus, delicate pale pink roses, and variegated eucalyptus stems tied with raw silk sage ribbon. Surrounding the wooden oak workbench are rolls of textured linen craft paper in ivory, champagne, and muted sage, vintage brass shears, a ceramic bud vase, and scattered soft petals. Fine art editorial photography aesthetic with gentle warm highlights and rich organic textures."
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPTZhSNJsj0cYkjBFasvTBq7MUOGq948I_YJaxzRKUw&s=10"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent pointer-events-none"
+                ></div>
+                <!-- Floating Specimen Badge -->
+                <div
+                  class="absolute bottom-6 left-6 bg-surface/95 backdrop-blur-md px-5 py-3 rounded-xl shadow-md flex items-center gap-3"
+                >
+                  <div
+                    class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary"
+                  >
+                    <span class="material-symbols-outlined text-[20px]"
+                      >spa</span
+                    >
+                  </div>
+                  <div>
+                    <p
+                      class="font-label-md text-label-md text-primary font-semibold"
+                    >
+                      Rangkaian Musim Semi
+                    </p>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant text-[11px]"
+                    >
+                      Ranunculus &amp; Pale Rosalie
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Subtle Backdrop Organic Glow -->
+              <div
+                class="absolute -top-12 -right-12 w-64 h-64 rounded-full bg-secondary-container/30 blur-3xl -z-10 pointer-events-none"
+              ></div>
+            </div>
+          </div>
+        </section>
+        <!-- 3-STEP GUIDE SECTION: Cara Kerja -->
+        <section class="w-full py-space-xl bg-surface">
+          <div class="max-w-[1360px] mx-auto px-gutter">
+            <!-- Section Header -->
+            <div class="max-w-xl mx-auto text-center mb-space-xl">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+                >Cara Kerja</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary mt-space-xs mb-space-sm font-normal"
+              >
+                Tiga Langkah Mudah Merangkai Buketmu
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant font-light"
+              >
+                Wujudkan pesan cinta dan penghargaan dengan proses personalisasi
+                bertahap yang tenang dan menyenangkan.
+              </p>
+            </div>
+            <!-- Step Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Step 1 -->
+              <div
+                class="group bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-sm hover:shadow-md relative overflow-hidden"
+              >
+                <div class="flex items-center justify-between mb-space-md">
+                  <span
+                    class="font-headline-md text-headline-md text-secondary/40 font-light"
+                    >01</span
+                  >
+                  <div
+                    class="w-12 h-12 rounded-full bg-surface flex items-center justify-center text-primary group-hover:bg-secondary-fixed transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >potted_plant</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-space-xs font-medium"
+                  >
+                    1. Pilih Bunga
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Pilih kombinasi mawar, lili, tulip, atau krisan segar sesuai
+                    nuansa hati dan makna yang ingin kamu sampaikan.
+                  </p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center gap-2 text-secondary font-label-md text-label-md"
+                >
+                  <span>Katalog 24+ Tangkai Varietas</span>
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div
+                class="group bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-sm hover:shadow-md relative overflow-hidden"
+              >
+                <div class="flex items-center justify-between mb-space-md">
+                  <span
+                    class="font-headline-md text-headline-md text-secondary/40 font-light"
+                    >02</span
+                  >
+                  <div
+                    class="w-12 h-12 rounded-full bg-surface flex items-center justify-center text-primary group-hover:bg-secondary-fixed transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >style</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-space-xs font-medium"
+                  >
+                    2. Pilih Kertas &amp; Ucapan
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Sesuaikan warna wrapping paper linen premium, tekstur pita
+                    sutra, dan sematkan kartu ucapan berkaligrafi spesial.
+                  </p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center gap-2 text-secondary font-label-md text-label-md"
+                >
+                  <span>Pilihan Kertas Eco-Friendly &amp; Silk</span>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div
+                class="group bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between hover:bg-surface-container transition-all duration-300 shadow-sm hover:shadow-md relative overflow-hidden"
+              >
+                <div class="flex items-center justify-between mb-space-md">
+                  <span
+                    class="font-headline-md text-headline-md text-secondary/40 font-light"
+                    >03</span
+                  >
+                  <div
+                    class="w-12 h-12 rounded-full bg-surface flex items-center justify-center text-primary group-hover:bg-secondary-fixed transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[26px]"
+                      >visibility</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="font-headline-sm text-headline-sm text-primary mb-space-xs font-medium"
+                  >
+                    3. Lihat &amp; Pesan
+                  </h3>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Tinjau simulasi visual buket secara langsung dari berbagai
+                    sudut, sesuaikan bujet, lalu checkout dengan mudah.
+                  </p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center gap-2 text-secondary font-label-md text-label-md"
+                >
+                  <span>Konfirmasi Cepat &amp; Garansi Segar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CAROUSEL / HORIZONTAL SCROLL SECTION: Buket Rekomendasi -->
+        <section
+          class="w-full py-space-xl bg-surface-container-low/40"
+          id="koleksi"
+        >
+          <div class="max-w-[1360px] mx-auto px-gutter">
+            <!-- Section Header with Controls -->
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm"
+            >
+              <div>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+                  >Koleksi Terlaris</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-primary mt-space-xs font-normal"
+                >
+                  Buket Rekomendasi
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-1"
+                >
+                  Inspirasi rangkaian terpopuler yang siap kamu sesuaikan sesuai
+                  selera.
+                </p>
+              </div>
+              <div class="flex items-center gap-2 self-start md:self-auto">
+                <button
+                  aria-label="Sebelumnya"
+                  class="w-11 h-11 rounded-full bg-surface text-primary flex items-center justify-center shadow-sm hover:bg-surface-container transition-colors disabled:opacity-40"
+                  id="carousel-prev"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >west</span
+                  >
+                </button>
+                <button
+                  aria-label="Selanjutnya"
+                  class="w-11 h-11 rounded-full bg-surface text-primary flex items-center justify-center shadow-sm hover:bg-surface-container transition-colors"
+                  id="carousel-next"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >east</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- Horizontal Carousel Container -->
+            <div
+              class="flex gap-space-md overflow-x-auto pb-4 scroll-smooth no-scrollbar snap-x snap-mandatory"
+              id="bouquet-track"
+            >
+              <!-- Item 1 -->
+              <div
+                class="min-w-[290px] sm:min-w-[320px] max-w-[320px] snap-start bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[4/5] bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Exquisite artisan bouquet titled Serene Pastel Blossom featuring peach david austin roses, blush pink spray carnations, and white astilbe wrapped in sage green textured paper with ivory ribbon on a minimalist wooden background."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5OmZamLOl7NXGonwk07LUAkF-X0xV-S4JjsHkqk-Lxr3-N8p66TnD_b5J2hxFQEpu2uDUTFYLKuSCXU0AY6qmH2o_N5PfDvYJdsogz49sF3tHnXEqqOvLliRqvfJbqL7oiV5Lzl7-gqgZ_KifBazLFwlVYxdzny0liX2CCq3x8KkXu3o6IITMESXbIjNVI3_N7N3r7BPEt7-yOO1bC1PI1PaaHF25CTDQmFQDsMb1QtEJJmbG6DLt"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm"
+                  >
+                    Best Seller
+                  </span>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between">
+                  <div>
+                    <div
+                      class="flex items-center justify-between text-secondary font-label-sm text-label-sm mb-1"
+                    >
+                      <span>Mawar &amp; Eustoma</span>
+                      <span class="flex items-center gap-1"
+                        ><span class="material-symbols-outlined text-[14px]"
+                          >star</span
+                        >
+                        4.9</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                    >
+                      Serene Pastel Blossom
+                    </h3>
+                    <p
+                      class="font-label-lg text-label-lg text-primary font-bold mb-4"
+                    >
+                      Mulai Rp 185.000
+                    </p>
+                  </div>
+                  <a
+                    class="w-full py-2.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors text-center font-medium"
+                    data-path="buat-buket"
+                    href="builder-bunga.html"
+                  >
+                    Pakai &amp; Ubah
+                  </a>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div
+                class="min-w-[290px] sm:min-w-[320px] max-w-[320px] snap-start bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[4/5] bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Dreamy feminine floral bouquet named Blushing Grace made of delicate pale pink ranunculus, white sweet peas, and soft hydrangeas wrapped in dusty pink linen craft paper with a translucent chiffon ribbon on a warm sunlit stone ledge."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUjqDbb8L8ckEZGL5NPO3pK0w3gyEIeP_R028r5hqjGrMiu09hA9R9XtG_8P-TYTaAlc94XD9Ngovi6KqofVtAdc1_iR7F18kVCx2NLfkAjmxlJ0gpac5VyVmgIEyIyLNudQAEjrdv_HSv_S0urvSmvV_w3JipFB_OfmfDV6sq2Hv9oCH8q8L4g59Ofm_-jWldam-0SSudXK9PA-xU8PGZz48Rpi7gvDiR_qjPG-zHZC9P2WiF2hh6"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm"
+                  >
+                    Favorit
+                  </span>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between">
+                  <div>
+                    <div
+                      class="flex items-center justify-between text-secondary font-label-sm text-label-sm mb-1"
+                    >
+                      <span>Ranunculus &amp; Peas</span>
+                      <span class="flex items-center gap-1"
+                        ><span class="material-symbols-outlined text-[14px]"
+                          >star</span
+                        >
+                        5.0</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                    >
+                      Blushing Grace
+                    </h3>
+                    <p
+                      class="font-label-lg text-label-lg text-primary font-bold mb-4"
+                    >
+                      Mulai Rp 220.000
+                    </p>
+                  </div>
+                  <a
+                    class="w-full py-2.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors text-center font-medium"
+                    data-path="buat-buket"
+                    href="builder-bunga.html"
+                  >
+                    Pakai &amp; Ubah
+                  </a>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div
+                class="min-w-[290px] sm:min-w-[320px] max-w-[320px] snap-start bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[4/5] bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Lush botanical bouquet Eucalyptus Whispers centered around white lisianthus, silver dollar eucalyptus foliage, baby breath, and chamomile flowers wrapped in neutral raw oat fiber wrap with organic hemp string."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuKL4zTX-JkfuC0tBMpFONEEJeETjccZ_urFt8SgucrICmx7wetgSSubjyo7nn8RKjCVHfWrGkOrETXJQtkLwREdUjX3cZ6bEQk5d6t0agvb7rosmSTK8hBY-65V8Hp_AhBmljY2e2qZROTMay_z6lBZYo_-lcuzQTOxiFPULRe7tf26y0ePhu6EU_g-nxPvierFO0EhBoPMeDgLHKpG3onueq1g17_NHDRpoNSPxGjLPRgIB5imBU"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-surface/90 backdrop-blur text-primary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm"
+                  >
+                    Botani Segar
+                  </span>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between">
+                  <div>
+                    <div
+                      class="flex items-center justify-between text-secondary font-label-sm text-label-sm mb-1"
+                    >
+                      <span>Eucalyptus &amp; Krisan</span>
+                      <span class="flex items-center gap-1"
+                        ><span class="material-symbols-outlined text-[14px]"
+                          >star</span
+                        >
+                        4.8</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                    >
+                      Eucalyptus Whispers
+                    </h3>
+                    <p
+                      class="font-label-lg text-label-lg text-primary font-bold mb-4"
+                    >
+                      Mulai Rp 150.000
+                    </p>
+                  </div>
+                  <a
+                    class="w-full py-2.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors text-center font-medium"
+                    data-path="buat-buket"
+                    href="builder-bunga.html"
+                  >
+                    Pakai &amp; Ubah
+                  </a>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div
+                class="min-w-[290px] sm:min-w-[320px] max-w-[320px] snap-start bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[4/5] bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Warm autumn-themed floral arrangement named Autumn Sunbeam combining mini yellow sunflowers, terracotta roses, dried bunny tails, and amber hypericum berries in soft brown parchment wrapping."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXRoSfHKO16O_GGqIneWnBxV7HrGXIpRrhHvMf2muwGuNfvWH8eumf0K8wm6XMSn5w4tnFpZHZ3XDzfR6zwl6lWnmW6-Y8-f8Hg-S9ebxMEzOGwHD-Y5xcENUPiHH1jvDaDuOffAnVc78SXxesJGVZ6BBS5F-G-K4CzEsEwAynAIYVGLef_DlcymkgxAZ19RMeZz21j5zWAWB6ncBZal-bjQJs__NLmwk7QTm9Nrd30tgDkeeqUPGA"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm"
+                  >
+                    Hangat &amp; Ceria
+                  </span>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between">
+                  <div>
+                    <div
+                      class="flex items-center justify-between text-secondary font-label-sm text-label-sm mb-1"
+                    >
+                      <span>Sunflower &amp; Mawar</span>
+                      <span class="flex items-center gap-1"
+                        ><span class="material-symbols-outlined text-[14px]"
+                          >star</span
+                        >
+                        4.9</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                    >
+                      Autumn Sunbeam
+                    </h3>
+                    <p
+                      class="font-label-lg text-label-lg text-primary font-bold mb-4"
+                    >
+                      Mulai Rp 195.000
+                    </p>
+                  </div>
+                  <a
+                    class="w-full py-2.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors text-center font-medium"
+                    data-path="buat-buket"
+                    href="builder-bunga.html"
+                  >
+                    Pakai &amp; Ubah
+                  </a>
+                </div>
+              </div>
+              <!-- Item 5 -->
+              <div
+                class="min-w-[290px] sm:min-w-[320px] max-w-[320px] snap-start bg-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group"
+              >
+                <div
+                  class="relative aspect-[4/5] bg-surface-container overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    data-alt="Nostalgic vintage floral bouquet named Vintage Rosalie featuring mauve garden roses, dried lavender sprigs, and olive leaves arranged elegantly in ivory matte Korean paper wrapping with wax seal stamp."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgKMnQ0OFeCwhYrsRSXmCw5n8VzsyKBTE4cjOO27-JphUirnEKnF_QRIre2ZkkbBV5nMvpStQTQHFS_XWWXSkfDL1SaDeWNo5AStecspqrImuJtPePpixdUyO_2Tu3x0Y-w3yQwAvPK-Z6HOK3jpifBcvqx3BNOGNem_shbp-BZKaYMjuj3zSEKxGsO2z8sRfCyA_yV5cJOSC5chp5k5q0FqzpA6N8tWbfkQWkPM4h8pbXQ54X2Ph5"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-sm text-label-sm px-3 py-1 rounded-full shadow-sm"
+                  >
+                    Artisan
+                  </span>
+                </div>
+                <div class="p-space-md flex flex-col flex-1 justify-between">
+                  <div>
+                    <div
+                      class="flex items-center justify-between text-secondary font-label-sm text-label-sm mb-1"
+                    >
+                      <span>Mauve Rose &amp; Lavender</span>
+                      <span class="flex items-center gap-1"
+                        ><span class="material-symbols-outlined text-[14px]"
+                          >star</span
+                        >
+                        4.9</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-primary font-semibold mb-2"
+                    >
+                      Vintage Rosalie
+                    </h3>
+                    <p
+                      class="font-label-lg text-label-lg text-primary font-bold mb-4"
+                    >
+                      Mulai Rp 245.000
+                    </p>
+                  </div>
+                  <a
+                    class="w-full py-2.5 rounded-xl bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-md text-label-md transition-colors text-center font-medium"
+                    data-path="buat-buket"
+                    href="builder-bunga.html"
+                  >
+                    Pakai &amp; Ubah
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- STORE INFORMATION & LOCATION SECTION -->
+        <section id="lokasi" class="w-full py-space-xl bg-surface">
+          <div class="max-w-[1360px] mx-auto px-gutter">
+            <div class="mb-space-lg">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+                >Studio &amp; Pemesanan</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary mt-space-xs font-normal"
+              >
+                Kunjungi Studio Kami
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Rasakan aroma segar langsung di atelier botani kami atau
+                konsultasikan buket istimewa secara personal.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch"
+            >
+              <!-- Left Side: Information Card (5 Cols) -->
+              <div
+                class="lg:col-span-5 bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-sm"
+              >
+                <div class="flex flex-col gap-space-md">
+                  <!-- Address Group -->
+                  <div class="flex items-start gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary shrink-0 mt-1"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >pin_drop</span
+                      >
+                    </div>
+                    <div>
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary font-medium"
+                      >
+                        Studio Vellorist Depok
+                      </h3>
+                      <p
+                        class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed"
+                      >
+                        Jl. Akses UI, Depok, Jawa Barat
+                      </p>
+                      <span
+                        class="font-label-sm text-label-sm text-secondary font-semibold mt-1 inline-block"
+                        >Dekat Stasiun Pondok Cina &amp; Kampus UI</span
+                      >
+                    </div>
+                  </div>
+                  <div class="h-px w-full bg-outline-variant/30"></div>
+                  <!-- Opening Hours -->
+                  <div class="flex items-start gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary shrink-0 mt-1"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >schedule</span
+                      >
+                    </div>
+                    <div class="w-full">
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary font-medium"
+                      >
+                        Jam Operasional
+                      </h3>
+                      <div
+                        class="mt-2 space-y-1 font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        <div class="flex justify-between">
+                          <span>Senin – Sabtu</span>
+                          <span class="font-semibold text-primary"
+                            >08.00 – 20.00 WIB</span
+                          >
+                        </div>
+                        <div class="flex justify-between">
+                          <span>Minggu</span>
+                          <span class="font-semibold text-primary"
+                            >09.00 – 17.00 WIB</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h-px w-full bg-outline-variant/30"></div>
+                  <!-- Consultation / Urgent Note -->
+                  <div class="flex items-start gap-space-sm">
+                    <div
+                      class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary shrink-0 mt-1"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >support_agent</span
+                      >
+                    </div>
+                    <div>
+                      <h3
+                        class="font-headline-sm text-headline-sm text-primary font-medium"
+                      >
+                        Layanan Cepat &amp; Custom
+                      </h3>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant mt-1"
+                      >
+                        Butuh pengiriman di hari yang sama (same-day) atau
+                        konsultasi rangkaian bunga pernikahan? Diskusikan
+                        langsung dengan florist kami.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Direct WhatsApp CTA Button -->
+                <div class="mt-space-lg pt-space-sm">
+                  <a
+                    class="w-full py-4 px-6 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg flex items-center justify-center gap-3 shadow-md transition-all group"
+                    href="https://wa.me/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg
+                      class="w-5 h-5 fill-current text-[#4ade80]"
+                      viewbox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-2.023-.474-1.329-.548-2.18-1.89-2.247-1.979-.066-.089-.543-.722-.543-1.378 0-.655.344-.977.466-1.107.123-.131.268-.164.357-.164.089 0 .178 0 .256.005.083.004.194-.031.303.232.112.268.384.938.417 1.006.033.067.056.145.011.234-.045.089-.067.145-.134.223-.066.078-.14.174-.2.234-.067.067-.137.14-.059.273.078.134.348.574.747.929.515.458.949.601 1.083.668.134.067.212.056.29-.033.078-.09.334-.39.423-.524.089-.134.179-.112.3-.067.123.045.781.368.915.435.134.067.223.1.256.156.033.056.033.324-.111.729z"
+                      ></path>
+                    </svg>
+                    <span>Chat WhatsApp Kami</span>
+                    <span
+                      class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-1"
+                      >send</span
+                    >
+                  </a>
+                </div>
+              </div>
+              <!-- Right Side: Styled Interactive Map Canvas (7 Cols) -->
+              <div
+                class="lg:col-span-7 flex flex-col rounded-2xl overflow-hidden shadow-sm bg-surface-container border border-outline-variant/10 min-h-[420px] relative"
+              >
+                <!-- Map Container with Data-Location -->
+                <div
+                  class="w-full h-full min-h-[380px] bg-cover bg-center relative"
+                  data-location="Jl. Akses UI, Depok, Indonesia"
+                  style="
+                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCTLxnheCPfvczXXze-k4ZfYr5EEIIEYhdcNiftk17cOjyYlKUfuCf_Omt8SxOET0X9kfJk-22WpwdgonSZIK0hsEcj9r24o2XNm83MDRXdzOzDYTpPQlbYN_ljlllZIjrZbhrJU4yKy5rtBmQpJDviTauL_W8wkaPaBNTgnpdLuyARavIHucd9H5GXdRURbbx_4DkpLW3xfBXHxsP6fqMfv9i0WT0pCds1t_A8776WQNZb2B-xS_mK&quot;);
+                  "
+                >
+                  <!-- Map Overlay Gradients for Luxury Tactile Feel -->
+                  <div
+                    class="absolute inset-0 bg-primary/5 pointer-events-none"
+                  ></div>
+                  <!-- Custom Botanical Location Pin -->
+                  <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center"
+                  >
+                    <div class="relative flex items-center justify-center">
+                      <span
+                        class="animate-ping absolute inline-flex h-12 w-12 rounded-full bg-secondary opacity-30"
+                      ></span>
+                      <div
+                        class="relative bg-primary text-on-primary w-12 h-12 rounded-full shadow-xl flex items-center justify-center border-2 border-surface"
+                      >
+                        <span class="material-symbols-outlined text-[24px]"
+                          >local_florist</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="mt-2 bg-surface/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg border border-outline-variant/20 flex items-center gap-1.5"
+                    >
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      <span
+                        class="font-label-sm text-label-sm text-primary font-bold"
+                        >Vellorist Atelier Depok</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Floating Map Navigation Bar -->
+                  <div
+                    class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-3.5 rounded-xl shadow-md flex flex-wrap items-center justify-between gap-3"
+                  >
+                    <div class="flex items-center gap-2">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[20px]"
+                        >explore</span
+                      >
+                      <span class="font-label-md text-label-md text-primary"
+                        >Jalan Akses UI • Parkir Khusus Tersedia</span
+                      >
+                    </div>
+                    <a
+                      class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container transition-colors shadow-sm"
+                      href="https://maps.google.com/?q=Jl.+Margonda+Raya+Depok"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <span>Petunjuk Arah Google Maps</span>
+                      <span class="material-symbols-outlined text-[16px]"
+                        >open_in_new</span
+                      >
+                    </a>
+                  </div>
+                  <!-- Zoom & Pan Indicator Controls -->
+                  <div
+                    class="absolute top-4 right-4 flex flex-col gap-1 shadow-md bg-surface rounded-lg p-1"
+                  >
+                    <button
+                      aria-label="Perbesar peta"
+                      class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-container rounded transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >add</span
+                      >
+                    </button>
+                    <div class="h-px bg-outline-variant/30 mx-1"></div>
+                    <button
+                      aria-label="Perkecil peta"
+                      class="w-8 h-8 flex items-center justify-center text-primary hover:bg-surface-container rounded transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >remove</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="js/state.js"></script>
+      <script src="js/home.js"></script>
+    </main>
+    <footer class="w-full bg-surface-container-low mt-space-xl">
+      <div
+        class="max-w-[1360px] mx-auto px-gutter py-space-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-headline-md text-headline-md text-primary"
+              >Vellorist</span
+            ><span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"
+              >Atelier Floral</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Rangkaian botani artisan dan kurasi bunga segar untuk momen terindah
+            Anda. Melayani pemesanan langsung &amp; konsultasi.
+          </p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-space-lg text-on-surface-variant font-label-md text-label-md"
+        >
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+              >Hubungi Kami</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >instagram</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >+62 811-1111-1111</span
+            >
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+              >Studio</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >Jl. Akses UI No. 45A</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >Depok, Indonesia</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1360px] mx-auto px-gutter py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"
+      >
+        <p class="font-label-sm text-label-sm">
+          © 2025 Vellorist Botanical Atelier. Seluruh hak cipta dilindungi.
+        </p>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="font-label-sm text-label-sm hover:text-primary transition-colors"
+            data-path="kebijakan-privasi"
+            href="#"
+            >Kebijakan Privasi</a
+          ><a
+            class="font-label-sm text-label-sm hover:text-primary transition-colors"
+            data-path="syarat-ketentuan"
+            href="#"
+            >Syarat &amp; Ketentuan</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

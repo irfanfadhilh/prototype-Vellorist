@@ -1,0 +1,1311 @@
+<!doctype html>
+
+<html lang="id">
+  <head>
+    <title>Pilih Bunga — Vellorist</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="bg-background font-body-md text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed"
+  >
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(35,51,41,0.04)]"
+    >
+      <div
+        class="h-20 max-w-[1360px] mx-auto px-gutter flex items-center justify-between"
+      >
+        <div class="flex items-center gap-space-sm">
+          <img
+            alt="Vellorist Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1WPaFYtWAHURqjgn2msfA2mNFcrvAtFEhROA93lSEKMshj1hp--OgjpRn6XPvwIaU9M4xhnl8YlMvl7SIVqhHeZ5TDjcMeCkmWuOjpsYXPFC6RbdsGs_RzykTKXjSZixFthWUQMLYKCqxGjQTdlPDmWE1hRpTDXipSRnGhZ8pP8cNA_2I491YZav0qcunh07PG3jBDMgO5YDennjhSKTkFwrCE8IF7peBVQJV-Qlk3F_qOsODDSeHId0g"
+          /><a
+            class="font-headline-sm text-headline-sm tracking-tight text-primary font-normal"
+            data-path="beranda"
+            href="index.html"
+            >Vellorist</a
+          >
+        </div>
+        <nav
+          class="hidden md:flex items-center gap-space-lg"
+          data-active-classes="text-primary font-semibold border-b border-primary"
+        >
+          <a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="beranda"
+            href="index.html"
+            >Beranda</a
+          ><a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="buat-buket"
+            href="builder-bunga.html"
+            >Buat Buket</a
+          ><a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="rekomendasi"
+            href="index.html#koleksi"
+            >Rekomendasi</a
+          ><a
+            class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors py-1"
+            data-path="lokasi"
+            href="index.html#lokasi"
+            >Lokasi</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md">
+          <a
+            aria-label="Keranjang Belanja"
+            class="relative flex items-center justify-center p-space-xs text-primary hover:text-secondary transition-colors"
+            data-path="keranjang"
+            href="pratinjau.html"
+            ><span class="material-symbols-outlined text-[24px]"
+              >shopping_bag</span
+            ><span
+              class="absolute -top-1 -right-1.5 flex items-center justify-center min-w-[18px] h-[18px] px-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] leading-none"
+              >2</span
+            ></a
+          >
+          <div
+            class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-on-primary text-[18px]"
+              >person</span
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background min-h-screen">
+      <div class="flex flex-col w-full">
+        <!-- Progress Stepper Header -->
+        <section
+          class="w-full bg-surface-container-low/70 backdrop-blur-md py-space-md shadow-sm sticky top-20 z-30"
+        >
+          <div
+            class="max-w-[1360px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-sm"
+          >
+            <div class="flex items-center gap-space-xs">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold"
+                >Atelier Builder</span
+              >
+              <span class="text-on-surface-variant font-label-sm">•</span>
+              <span class="font-headline-sm text-headline-sm text-primary"
+                >Kustomisasi Buket Segar</span
+              >
+            </div>
+            <!-- Stepper Pills -->
+            <div
+              class="flex items-center gap-space-xs sm:gap-space-sm bg-surface-container p-1 rounded-full shadow-inner"
+            >
+              <!-- Step 1 Active -->
+              <div
+                class="flex items-center gap-2 bg-primary text-on-primary px-4 py-1.5 rounded-full shadow-sm"
+              >
+                <span
+                  class="w-5 h-5 rounded-full bg-surface/20 flex items-center justify-center font-label-sm text-[11px]"
+                  >1</span
+                >
+                <span class="font-label-md text-label-md tracking-normal"
+                  >Pilih Bunga</span
+                >
+              </div>
+              <span class="w-3 h-[2px] bg-outline-variant/60"></span>
+              <!-- Step 2 Inactive -->
+              <div
+                class="flex items-center gap-2 text-on-surface-variant px-3 py-1.5 rounded-full opacity-65"
+              >
+                <span
+                  class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-label-sm text-[11px] text-on-surface"
+                  >2</span
+                >
+                <span
+                  class="font-label-md text-label-md tracking-normal hidden sm:inline"
+                  >Kertas &amp; Pita</span
+                >
+              </div>
+              <span class="w-3 h-[2px] bg-outline-variant/60"></span>
+              <!-- Step 3 Inactive -->
+              <div
+                class="flex items-center gap-2 text-on-surface-variant px-3 py-1.5 rounded-full opacity-65"
+              >
+                <span
+                  class="w-5 h-5 rounded-full bg-surface-container-high flex items-center justify-center font-label-sm text-[11px] text-on-surface"
+                  >3</span
+                >
+                <span
+                  class="font-label-md text-label-md tracking-normal hidden sm:inline"
+                  >Kartu Ucapan</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Main Showcase Container -->
+        <div
+          class="max-w-[1360px] mx-auto px-gutter w-full py-space-lg flex flex-col gap-space-lg"
+        >
+          <!-- Title and Curation Intro -->
+          <div
+            class="flex flex-col md:flex-row md:items-end justify-between gap-space-md"
+          >
+            <div class="flex flex-col gap-1 max-w-2xl">
+              <div class="flex items-center gap-2">
+                <span
+                  class="inline-block w-2 h-2 rounded-full bg-secondary"
+                ></span>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"
+                  >Langkah Pertama: Komposisi Batang Utama</span
+                >
+              </div>
+              <h1
+                class="font-display-md text-display-md text-primary tracking-tight"
+              >
+                Koleksi Tangkai Bunga Segar
+              </h1>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Pilih kombinasi bunga segar pilihan dari kebun artisan kami.
+                Florist kami merekomendasikan 6 hingga 15 tangkai untuk hasil
+                komposisi seimbang dan proporsional.
+              </p>
+            </div>
+            <!-- Live Mini Visualizer Meter -->
+            <div
+              class="bg-surface-container p-4 rounded-xl flex items-center gap-4 shadow-sm min-w-[280px]"
+            >
+              <div class="relative w-12 h-12 flex items-center justify-center">
+                <svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+                  <path
+                    class="text-surface-variant"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3.5"
+                  ></path>
+                  <path
+                    class="text-secondary transition-all duration-500 ease-out"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    id="svgProgress"
+                    stroke="currentColor"
+                    stroke-dasharray="68, 100"
+                    stroke-linecap="round"
+                    stroke-width="3.5"
+                  ></path>
+                </svg>
+                <span
+                  class="absolute font-headline-sm text-headline-sm text-primary font-bold"
+                  id="meterStemCount"
+                  >8</span
+                >
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-label-sm text-label-sm uppercase text-on-surface-variant"
+                  >Kepadatan Buket</span
+                >
+                <span
+                  class="font-label-lg text-label-lg text-primary"
+                  id="meterStatus"
+                  >Harmoni Sedang (Ideal)</span
+                >
+                <span class="font-body-sm text-body-sm text-on-surface-variant"
+                  >Min. 5 • Maks. 25 tangkai</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Search & Filter Controls -->
+          <div
+            class="flex flex-col lg:flex-row gap-space-md items-stretch lg:items-center justify-between bg-surface-container-low p-4 rounded-xl shadow-sm"
+          >
+            <!-- Search Input -->
+            <div class="relative flex-1 max-w-lg">
+              <span
+                class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]"
+                >search</span
+              >
+              <input
+                class="w-full bg-surface-container pl-11 pr-4 py-2.5 rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all shadow-inner"
+                id="flowerSearchInput"
+                placeholder="Cari varietas mawar, peony, hydrangea..."
+                type="text"
+              />
+            </div>
+            <!-- Filter Chips -->
+            <div
+              class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0 scrollbar-none no-scrollbar"
+            >
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary transition-all whitespace-nowrap shadow-sm"
+                data-category="semua"
+              >
+                Semua
+              </button>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="merah"
+              >
+                Merah
+              </button>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="putih"
+              >
+                Putih
+              </button>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="pink"
+              >
+                Pink
+              </button>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="kuning"
+              >
+                Kuning
+              </button>
+              <span class="w-[1px] h-5 bg-outline-variant/60 mx-1"></span>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="romantis"
+              >
+                Romantis
+              </button>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="wisuda"
+              >
+                Wisuda
+              </button>
+              <button
+                class="filter-chip px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap"
+                data-category="simpati"
+              >
+                Simpati
+              </button>
+            </div>
+          </div>
+          <!-- Product Grid & Side Preview Container -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start"
+          >
+            <!-- Flower Cards Grid (8 cols on large) -->
+            <div
+              class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-space-md"
+              id="flowerGrid"
+            >
+              <!-- Flower 1: Mawar Merah Semi-Holland -->
+              <div
+                class="flower-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group"
+                data-category="merah romantis"
+                data-id="1"
+                data-name="Mawar Merah Semi-Holland"
+                data-price="18000"
+              >
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      data-alt="Close up photography of vibrant velvety deep crimson red roses grown in high elevation greenhouse, soft morning mist, macro petal texture with dewdrops, artisanal botanical studio lighting, soft shadows."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB87h3Gv9IqHaciSMGl--aQU23XVz1zaruekxMMx6kw_avgB_hi3NBIcTbzKYcE46Z_OBj7aGo2L7PMeHWvOSxcU1SIh5eT9kjtlR8kACu5Juv5VGL8Db-tZ0GaKlSywNjNzBIwtv2y-zrRJhTXOMwdCR_5Z5f8V52an71tSZieWQFpVIPHqTRp3qY94v1CmCZYOQtBNTpoK7e-shXNZ9KNBviVlZ-8DDnTa3zd-uCQwQuLGG8769j8"
+                    />
+                    <span
+                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary shadow-sm"
+                    >
+                      Stok: 24 tangkai
+                    </span>
+                    <button
+                      aria-label="Lihat detail bunga"
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm"
+                      onclick="openDetailModal(1)"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >info</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary"
+                      >Rosa Semi-Holland</span
+                    >
+                    <h2
+                      class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors"
+                    >
+                      Mawar Merah Velvet
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2"
+                    >
+                      Kelopak tebal beludru beraroma manis lembut. Tahan mekar
+                      hingga 7 hari.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4 mt-2 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Harga Satuan</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >Rp 18.000</span
+                    >
+                  </div>
+                  <!-- Stepper -->
+                  <div
+                    class="flex items-center gap-2 bg-surface-container p-1 rounded-full shadow-inner"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(1, -1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >remove</span
+                      >
+                    </button>
+                    <span
+                      class="font-label-lg text-label-lg w-6 text-center text-primary font-semibold"
+                      id="qty-1"
+                      >3</span
+                    >
+                    <button
+                      class="w-8 h-8 rounded-full bg-primary text-on-primary hover:bg-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(1, 1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >add</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Flower 2: Peony Sarah Bernhardt -->
+              <div
+                class="flower-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group"
+                data-category="pink romantis wisuda"
+                data-id="2"
+                data-name="Peony Sarah Bernhardt"
+                data-price="45000"
+              >
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      data-alt="Exquisite lush pink Peony Sarah Bernhardt flower in full soft layered bloom, delicate paper thin ruffled petals, captured on pure warm linen tabletop, gentle warm ambient sunlight, organic fine art botanical composition."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn9pUk0EOIJ-NUhHdOoQm5-44GZGc_gF5lI-z_eCwGnLP4U8faE5rqupkW0oKdDDVUarRjB2Iea-QpsbtSWFzYiVuaEAITGhtt79bQ44Kf0UaD2exM5gvP3U-nUFTXPwSnTSwc7wzdBbo4bBKN0TVJhkJwZVSMF5mdRsqKR8bCsrC5TcziL_aiZzQ-OI3Py240Up5IECTwiTu022YsreYg3xSO9rvwnnaJULQvtyeQgCdJRCslNsY0"
+                    />
+                    <span
+                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary shadow-sm"
+                    >
+                      Stok: 12 tangkai
+                    </span>
+                    <button
+                      aria-label="Lihat detail bunga"
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm"
+                      onclick="openDetailModal(2)"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >info</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary"
+                      >Paeonia Lactiflora</span
+                    >
+                    <h2
+                      class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors"
+                    >
+                      Peony Blush Bernhardt
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2"
+                    >
+                      Kemewahan kelopak bertumpuk warna merah muda pucat yang
+                      merekah megah.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4 mt-2 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Harga Satuan</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >Rp 45.000</span
+                    >
+                  </div>
+                  <!-- Stepper -->
+                  <div
+                    class="flex items-center gap-2 bg-surface-container p-1 rounded-full shadow-inner"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(2, -1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >remove</span
+                      >
+                    </button>
+                    <span
+                      class="font-label-lg text-label-lg w-6 text-center text-primary font-semibold"
+                      id="qty-2"
+                      >2</span
+                    >
+                    <button
+                      class="w-8 h-8 rounded-full bg-primary text-on-primary hover:bg-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(2, 1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >add</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Flower 3: Tulip White Dynasty -->
+              <div
+                class="flower-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group"
+                data-category="putih simpati wisuda"
+                data-id="3"
+                data-name="Tulip Putih Royal"
+                data-price="22000"
+              >
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      data-alt="Pristine pure white Dutch tulips with sculptural curving pale green stems, clean studio minimalist portrait, tender ivory petals catching light, serene quiet botanical aesthetic with raw linen shadows."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG-OEBbzviTKQDOdZygENG88KZaVW4wL-lqJu-2OLk970C9MUAMOrzMRK6-BNBztxt3zt92hnX-JpMw5x87K8Bvulg7J9Ixcihn3kqBVBRtNTQHQ6Xlx5PS--RsuC1bsqST7c8P8IupZB56XJa_-00CX9yxfS9YZgbwU16CngwtFDoR9J217uTLwGsxGKNX390gegWsRm5A75z63R9YpfhURwWaUjk-MzF79KvL_ql71L2v4H46wlQ"
+                    />
+                    <span
+                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary shadow-sm"
+                    >
+                      Stok: 19 tangkai
+                    </span>
+                    <button
+                      aria-label="Lihat detail bunga"
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm"
+                      onclick="openDetailModal(3)"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >info</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary"
+                      >Tulipa Gesneriana</span
+                    >
+                    <h2
+                      class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors"
+                    >
+                      Tulip Putih Royal
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2"
+                    >
+                      Bentuk kurva siluet elegan dan minimalis, simbol ketulusan
+                      murni.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4 mt-2 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Harga Satuan</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >Rp 22.000</span
+                    >
+                  </div>
+                  <!-- Stepper -->
+                  <div
+                    class="flex items-center gap-2 bg-surface-container p-1 rounded-full shadow-inner"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(3, -1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >remove</span
+                      >
+                    </button>
+                    <span
+                      class="font-label-lg text-label-lg w-6 text-center text-primary font-semibold"
+                      id="qty-3"
+                      >1</span
+                    >
+                    <button
+                      class="w-8 h-8 rounded-full bg-primary text-on-primary hover:bg-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(3, 1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >add</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Flower 4: Baby's Breath Million Star -->
+              <div
+                class="flower-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group"
+                data-category="putih wisuda romantis"
+                data-id="4"
+                data-name="Baby's Breath Gypsophila"
+                data-price="12000"
+              >
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      data-alt="Cloud-like cluster of airy white Gypsophila baby breath blossoms, ethereal micro floral texture, delicate thin green branching stems, soft focus bokeh background, high-end botanical catalogue photography."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvtinCO0Cz2pEN0-Qh5ayK4XiYbpLsJKH3iQgLmq4mMICAaAu8_179Ek6dbc54IYZeXLPu2sbE1wUu6k3GspcY5IZGYP2E9LsIaCWsQHJBZOd16WwpsvwkM2aG7FXApFB1ONoQSc7MOlT7I1RUoNm_GVL9yMRdXUxwP_spvcAi7gxRF7JFLskyUtgZTntlCH5zZwy3SDWrTnMjPPX_H-VTK-akDCSSWX3I87-i1DSLJECt_WH8tUf6"
+                    />
+                    <span
+                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary shadow-sm"
+                    >
+                      Stok: 35 tangkai
+                    </span>
+                    <button
+                      aria-label="Lihat detail bunga"
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm"
+                      onclick="openDetailModal(4)"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >info</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary"
+                      >Gypsophila Paniculata</span
+                    >
+                    <h2
+                      class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors"
+                    >
+                      Baby's Breath Cloud
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2"
+                    >
+                      Awan mini bunga putih mungil sebagai pengisi tekstur
+                      impian dan melayang.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4 mt-2 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Harga Satuan</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >Rp 12.000</span
+                    >
+                  </div>
+                  <!-- Stepper -->
+                  <div
+                    class="flex items-center gap-2 bg-surface-container p-1 rounded-full shadow-inner"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(4, -1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >remove</span
+                      >
+                    </button>
+                    <span
+                      class="font-label-lg text-label-lg w-6 text-center text-primary font-semibold"
+                      id="qty-4"
+                      >2</span
+                    >
+                    <button
+                      class="w-8 h-8 rounded-full bg-primary text-on-primary hover:bg-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(4, 1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >add</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Flower 5: Mawar Kuning Sunflower Companion -->
+              <div
+                class="flower-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-lg transition-all flex flex-col justify-between group"
+                data-category="kuning wisuda"
+                data-id="5"
+                data-name="Mawar Kuning Golden Sun"
+                data-price="16000"
+              >
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      data-alt="Luminous vibrant golden yellow roses with radiant spiral petals, golden hour natural warmth, photographed on ceramic surface with organic leaf foliage, radiant joyful ambiance."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuARQ-FaEYxZH6nKDMJgjQ9x02tgR6L32E2ptRftMdniUyp0b2Qja42LBwT07rVIhEuBTXbfy1v7XbKx_UqgIo0HBhlEFFhqYtP9wz6tHYBpk0Xm8So8sv83sTeQ23NshEtFxmzm4ueNYSXBfdDYtqX161XUaRwGx790BVPpo-FQXO_AnFH_jgIn5_ZXiQsImz4VE8_eBWtHTSVHbXQrXKZ_T8LzmwwJwWCXZUHJGO_gBPGlBIAR6bzX"
+                    />
+                    <span
+                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary shadow-sm"
+                    >
+                      Stok: 15 tangkai
+                    </span>
+                    <button
+                      aria-label="Lihat detail bunga"
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-sm"
+                      onclick="openDetailModal(5)"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >info</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-secondary"
+                      >Rosa Lucida</span
+                    >
+                    <h2
+                      class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors"
+                    >
+                      Mawar Kuning Soleil
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2"
+                    >
+                      Pancaran kehangatan persahabatan dan kebahagiaan murni
+                      penuh optimisme.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4 mt-2 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface-variant"
+                      >Harga Satuan</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-primary font-bold"
+                      >Rp 16.000</span
+                    >
+                  </div>
+                  <!-- Stepper -->
+                  <div
+                    class="flex items-center gap-2 bg-surface-container p-1 rounded-full shadow-inner"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-container-lowest text-primary hover:bg-secondary hover:text-on-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(5, -1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >remove</span
+                      >
+                    </button>
+                    <span
+                      class="font-label-lg text-label-lg w-6 text-center text-primary font-semibold"
+                      id="qty-5"
+                      >0</span
+                    >
+                    <button
+                      class="w-8 h-8 rounded-full bg-primary text-on-primary hover:bg-secondary flex items-center justify-center transition-all shadow-sm active:scale-95"
+                      onclick="updateQty(5, 1)"
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >add</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Flower 6: Hydrangea Ungu Lavender (SOLD OUT STATE) -->
+              <div
+                class="flower-card bg-surface-container-low rounded-xl p-space-md opacity-75 shadow-none flex flex-col justify-between relative overflow-hidden"
+                data-category="pink simpati"
+                data-id="6"
+                data-name="Hydrangea Lavender Dusk"
+                data-price="38000"
+              >
+                <div class="flex flex-col gap-3">
+                  <div
+                    class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-dim grayscale-[40%]"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Muted moody dusk lavender purple Hydrangea flower head with immense dome of delicate vintage four-petal florets, antique botanical illustration mood, muted lighting with earth tones."
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuD00E1gWs4dMenkVuttTKm5zeNiC10KVZrmFsE2y2Y3jRWexqEUSwgtPZud7J6uf6x3qnx6ODMqMVPPPvzF8sB76fBOUr8kF6pHvO5Xs6uPMsb33L_xtNlALOt0yYxmhrr97-BUMbQ2DNcva9kpGPKEdrJLsbcsRsZU9fJ9XsYLV5xoSl0v665-K3SKihy3q9oLb4u_8LheIh1ud9G9jJZIkovmCmKZ1hZiIecQTKjTlYT6aNgwu_JL"
+                    />
+                    <!-- Sold Out Badge Overlay -->
+                    <div
+                      class="absolute inset-0 bg-primary/40 backdrop-blur-[2px] flex items-center justify-center"
+                    >
+                      <div
+                        class="bg-surface-container-lowest/95 text-secondary px-4 py-1.5 rounded-full font-label-md text-label-md uppercase tracking-widest shadow-md flex items-center gap-1.5"
+                      >
+                        <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                        Stok Habis
+                      </div>
+                    </div>
+                    <button
+                      aria-label="Lihat detail bunga"
+                      class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary flex items-center justify-center shadow-sm"
+                      onclick="openDetailModal(6)"
+                    >
+                      <span class="material-symbols-outlined text-[18px]"
+                        >info</span
+                      >
+                    </button>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-outline"
+                      >Hydrangea Macrophylla</span
+                    >
+                    <h2 class="font-headline-sm text-headline-sm text-outline">
+                      Hydrangea Lavender Dusk
+                    </h2>
+                    <p
+                      class="font-body-sm text-body-sm text-outline line-clamp-2"
+                    >
+                      Kuncup padat gradasi ungu keabuan yang meneduhkan hati.
+                      Panen musim depan.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-4 mt-2 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <span class="font-label-sm text-label-sm text-outline"
+                      >Harga Satuan</span
+                    >
+                    <span
+                      class="font-headline-sm text-headline-sm text-outline font-semibold"
+                      >Rp 38.000</span
+                    >
+                  </div>
+                  <!-- Disabled Stepper -->
+                  <div
+                    class="flex items-center gap-2 bg-surface-container-high p-1 rounded-full opacity-50 cursor-not-allowed"
+                  >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-container-lowest text-outline flex items-center justify-center cursor-not-allowed"
+                      disabled=""
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >remove</span
+                      >
+                    </button>
+                    <span
+                      class="font-label-lg text-label-lg w-6 text-center text-outline"
+                      >0</span
+                    >
+                    <button
+                      class="w-8 h-8 rounded-full bg-surface-dim text-outline flex items-center justify-center cursor-not-allowed"
+                      disabled=""
+                    >
+                      <span class="material-symbols-outlined text-[16px]"
+                        >add</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right Column: Interactive Arrangement Drawer & Live Guide (4 cols on large) -->
+            <aside
+              class="lg:col-span-4 flex flex-col gap-space-md sticky top-36"
+            >
+              <!-- Live Selected Basket Breakdown Card -->
+              <div
+                class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm"
+              >
+                <div class="flex items-center justify-between pb-2 border-b-0">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[22px]"
+                      >spa</span
+                    >
+                    <h3 class="font-headline-sm text-headline-sm text-primary">
+                      Komposisi Terpilih
+                    </h3>
+                  </div>
+                  <span
+                    class="bg-secondary-fixed text-on-secondary-fixed px-2.5 py-0.5 rounded-full font-label-sm text-label-sm"
+                    id="selectedCountBadge"
+                  >
+                    8 Tangkai
+                  </span>
+                </div>
+                <!-- Itemised Stem List -->
+                <div
+                  class="flex flex-col gap-2 max-h-60 overflow-y-auto pr-1"
+                  id="selectionList"
+                >
+                  <div
+                    class="flex items-center justify-between py-2 px-3 bg-surface-container-lowest rounded-lg shadow-sm"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      <span
+                        class="font-body-md text-body-md text-primary font-medium"
+                        >Mawar Merah Velvet</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-label-md text-label-md text-on-surface-variant"
+                        >3x</span
+                      >
+                      <span
+                        class="font-label-md text-label-md text-primary font-semibold"
+                        >Rp 54.000</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between py-2 px-3 bg-surface-container-lowest rounded-lg shadow-sm"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <span
+                        class="w-2 h-2 rounded-full bg-secondary-fixed-dim"
+                      ></span>
+                      <span
+                        class="font-body-md text-body-md text-primary font-medium"
+                        >Peony Blush Bernhardt</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-label-md text-label-md text-on-surface-variant"
+                        >2x</span
+                      >
+                      <span
+                        class="font-label-md text-label-md text-primary font-semibold"
+                        >Rp 90.000</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between py-2 px-3 bg-surface-container-lowest rounded-lg shadow-sm"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <span
+                        class="w-2 h-2 rounded-full bg-outline-variant"
+                      ></span>
+                      <span
+                        class="font-body-md text-body-md text-primary font-medium"
+                        >Tulip Putih Royal</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-label-md text-label-md text-on-surface-variant"
+                        >1x</span
+                      >
+                      <span
+                        class="font-label-md text-label-md text-primary font-semibold"
+                        >Rp 22.000</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between py-2 px-3 bg-surface-container-lowest rounded-lg shadow-sm"
+                  >
+                    <div class="flex items-center gap-2.5">
+                      <span
+                        class="w-2 h-2 rounded-full bg-primary-fixed-dim"
+                      ></span>
+                      <span
+                        class="font-body-md text-body-md text-primary font-medium"
+                        >Baby's Breath Cloud</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <span
+                        class="font-label-md text-label-md text-on-surface-variant"
+                        >2x</span
+                      >
+                      <span
+                        class="font-label-md text-label-md text-primary font-semibold"
+                        >Rp 24.000</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Florist Harmony Advice -->
+                <div
+                  class="bg-surface-container p-3.5 rounded-lg flex items-start gap-3 mt-1"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5"
+                    >auto_awesome</span
+                  >
+                  <div class="flex flex-col gap-0.5">
+                    <span
+                      class="font-label-md text-label-md text-primary font-semibold"
+                      >Saran Atelier Florist</span
+                    >
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                    >
+                      Komposisi kontras merah beludru &amp; baby breath Anda
+                      sangat puitis. Tambahkan 1-2 tangkai dedaunan eucalyptus
+                      di langkah berikutnya untuk nuansa rustic.
+                    </p>
+                  </div>
+                </div>
+                <!-- Subtotal Section -->
+                <div class="pt-2 flex items-center justify-between">
+                  <span
+                    class="font-body-md text-body-md text-on-surface-variant"
+                    >Subtotal Bunga</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-bold"
+                    id="asideSubtotal"
+                    >Rp 190.000</span
+                  >
+                </div>
+              </div>
+              <!-- Botanical Guarantee Note -->
+              <div
+                class="bg-surface-container-highest/60 p-4 rounded-xl flex items-center gap-3"
+              >
+                <span class="material-symbols-outlined text-primary text-[24px]"
+                  >verified</span
+                >
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Setiap tangkai dipetik subuh hari, dipelihara dengan larutan
+                  hidrasi organik, dan dijamin kesegarannya hingga tiba di
+                  pelukan penerima.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <!-- Interactive Flower Detail Modal / Drawer -->
+        <div
+          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"
+          id="flowerDetailModal"
+        >
+          <div
+            class="bg-surface-container-lowest max-w-xl w-full rounded-2xl shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 flex flex-col max-h-[921px]"
+          >
+            <!-- Modal Header / Hero Image -->
+            <div
+              class="relative w-full h-56 bg-surface-container-high overflow-hidden shrink-0"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Macro botanical photography of artisanal Rosa gallica red rose with deep velvety crimson petals, fine studio lighting emphasizing morning dew drops, artistic depth of field, luxury editorial aesthetic."
+                id="modalFlowerImg"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcvNRD6jQvG0zpOnt4ITHSsazj7NQ3hRwKSuxBM1lNI9KlYq-sQWqszcUReT1SDB3rlOJh0JmzUa-dUZm02sAqoYHJaIhH29Z4p_mq1wkyR96Ml2Op2dfpNaxVMr93vUbxlFzzaYTHnIm__A6-kFu-SyizI6e_M9FWbWbBHKKehjhTqoWEYFcgPyb0uAktxlt4qBubFTIhQflE2QBHsxtK0q7FUuK2WpsmHCPsuLTaYTa-QhMcT1XE"
+              />
+              <button
+                class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface/90 text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors shadow-md"
+                onclick="closeDetailModal()"
+              >
+                <span class="material-symbols-outlined text-[20px]">close</span>
+              </button>
+              <span
+                class="absolute bottom-3 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold shadow-sm"
+                id="modalCategoryBadge"
+              >
+                Semi-Holland Premium
+              </span>
+            </div>
+            <!-- Modal Body (Scrollable) -->
+            <div class="p-space-lg flex flex-col gap-space-md overflow-y-auto">
+              <div class="flex flex-col gap-1">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"
+                  id="modalLatinName"
+                  >Rosa Semi-Holland Velvet</span
+                >
+                <div class="flex items-center justify-between">
+                  <h3
+                    class="font-headline-md text-headline-md text-primary"
+                    id="modalFlowerTitle"
+                  >
+                    Mawar Merah Velvet
+                  </h3>
+                  <span
+                    class="font-headline-sm text-headline-sm text-secondary font-bold"
+                    id="modalFlowerPrice"
+                    >Rp 18.000 / tangkai</span
+                  >
+                </div>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  id="modalFlowerDesc"
+                >
+                  Mawar merah premium berkelopak tebal beludru dengan gradasi
+                  merah anggur pekat. Ditanam di dataran tinggi beriklim sejuk,
+                  menghasilkan kuntum berdiameter besar dengan daya mekar kokoh
+                  berhari-hari.
+                </p>
+              </div>
+              <!-- Floral Philosophy -->
+              <div
+                class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-1.5 shadow-sm"
+              >
+                <div
+                  class="flex items-center gap-2 text-primary font-headline-sm text-[17px]"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >psychology_alt</span
+                  >
+                  <span>Makna &amp; Filosofi Bunga</span>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"
+                  id="modalPhilosophy"
+                >
+                  Melambangkan cinta mendalam, ketulusan penuh komitmen,
+                  penghormatan abadi, serta rasa kagum tak berkesudahan.
+                  Sempurna untuk ungkapan perasaan yang tak terucap kata.
+                </p>
+              </div>
+              <!-- Care Tips -->
+              <div
+                class="bg-surface-container p-4 rounded-xl flex flex-col gap-1.5 shadow-sm"
+              >
+                <div
+                  class="flex items-center gap-2 text-primary font-headline-sm text-[17px]"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary text-[20px]"
+                    >water_drop</span
+                  >
+                  <span>Tips Perawatan (Care Tips)</span>
+                </div>
+                <ul
+                  class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-1 list-disc list-inside"
+                  id="modalCareTips"
+                >
+                  <li>
+                    Potong batang miring 45 derajat setiap 2 hari menggunakan
+                    gunting tajam.
+                  </li>
+                  <li>Gunakan vas bersih dan ganti air dingin setiap pagi.</li>
+                  <li>
+                    Jauhkan dari paparan sinar matahari terik langsung serta
+                    hembusan AC kencang.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Modal Footer -->
+            <div
+              class="p-4 bg-surface-container-low flex items-center justify-end gap-3 shrink-0"
+            >
+              <button
+                class="px-5 py-2.5 rounded-full font-label-md text-label-md text-on-surface hover:bg-surface-container-highest transition-colors"
+                onclick="closeDetailModal()"
+              >
+                Tutup
+              </button>
+              <button
+                class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-secondary transition-all flex items-center gap-2"
+                id="modalActionBtn"
+                onclick="addModalFlowerToBouquet()"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >add_circle</span
+                >
+                Tambahkan ke Buket
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Sticky Bottom Summary Bar -->
+        <div
+          class="fixed bottom-0 left-0 w-full z-40 bg-surface/95 backdrop-blur-xl shadow-[0_-8px_24px_rgba(35,51,41,0.08)] py-3.5"
+        >
+          <div
+            class="max-w-[1360px] mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between gap-3"
+          >
+            <!-- Left side: Total summary & stem chips preview -->
+            <div
+              class="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-start"
+            >
+              <!-- Visual Flower Stack Avatars -->
+              <div class="flex items-center -space-x-3 overflow-hidden">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-xs shadow-md border-2 border-surface"
+                >
+                  3x
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-sm text-xs shadow-md border-2 border-surface"
+                >
+                  2x
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-xs shadow-md border-2 border-surface"
+                >
+                  1x
+                </div>
+                <div
+                  class="w-10 h-10 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-xs shadow-md border-2 border-surface"
+                >
+                  +2
+                </div>
+              </div>
+              <!-- Total Price & Count Info -->
+              <div class="flex flex-col">
+                <div class="flex items-baseline gap-2">
+                  <span
+                    class="font-label-sm text-label-sm uppercase text-on-surface-variant font-medium"
+                    >Total Bunga:</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-bold"
+                    id="bottomTotalPrice"
+                    >Rp 190.000</span
+                  >
+                </div>
+                <span
+                  class="font-body-sm text-body-sm text-secondary font-medium"
+                  id="bottomStemsSelected"
+                  >8 tangkai dipilih (Buket Rimbun)</span
+                >
+              </div>
+            </div>
+            <!-- Right side: Next Action CTA -->
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+              <button
+                class="px-4 py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hidden md:block"
+              >
+                Simpan Draf
+              </button>
+              <a
+                class="w-full sm:w-auto px-8 py-3 rounded-full bg-primary hover:bg-secondary text-on-primary font-label-lg text-label-lg shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer"
+                data-path="buat-buket-step-2"
+                href="builder-kertas.html"
+              >
+                <span>Lanjut: Kertas &amp; Pita</span>
+                <span
+                  class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inline Interactive Script for Real-Time Basket & Details -->
+      <script src="js/state.js"></script>
+      <script src="js/bunga.js"></script>
+    </main>
+    <footer class="w-full bg-surface-container-low mt-space-xl">
+      <div
+        class="max-w-[1360px] mx-auto px-gutter py-space-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg"
+      >
+        <div class="flex flex-col gap-space-xs">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-headline-md text-headline-md text-primary"
+              >Vellorist</span
+            ><span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"
+              >Atelier Floral</span
+            >
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">
+            Rangkaian botani artisan dan kurasi bunga segar untuk momen terindah
+            Anda. Melayani pemesanan langsung &amp; konsultasi.
+          </p>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row gap-space-lg text-on-surface-variant font-label-md text-label-md"
+        >
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+              >Hubungi Kami</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >instagram</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >+62 811-1111-1111</span
+            >
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+              >Studio</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >Jl. Akses UI No. 45A</span
+            ><span class="font-body-sm text-body-sm text-on-surface-variant"
+              >Depok, Indonesia</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1360px] mx-auto px-gutter py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"
+      >
+        <p class="font-label-sm text-label-sm">
+          © 2025 Vellorist Botanical Atelier. Seluruh hak cipta dilindungi.
+        </p>
+        <div class="flex items-center gap-space-md">
+          <a
+            class="font-label-sm text-label-sm hover:text-primary transition-colors"
+            data-path="kebijakan-privasi"
+            href="#"
+            >Kebijakan Privasi</a
+          ><a
+            class="font-label-sm text-label-sm hover:text-primary transition-colors"
+            data-path="syarat-ketentuan"
+            href="#"
+            >Syarat &amp; Ketentuan</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
